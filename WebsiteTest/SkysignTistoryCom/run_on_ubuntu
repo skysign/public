@@ -1,0 +1,4 @@
+
+export PATH="$PATH:../drivers/ChromeDriver/2.22/"
+
+mvn test
