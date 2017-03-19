@@ -1,0 +1,180 @@
+/* html, boady tag에 있는 기본 margin, padding을 삭제 */
+/*html, body {
+	margin: 0px;
+	padding: 0px;
+}
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 가로 스크롤 발생 금지*/
+body {
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* header */
+#myheader h1 {
+	/*background-color: #fff;*/
+}
+
+#myheader .logo {
+	display: block;
+	position: relative;
+
+	width: 100%;
+	height: 65px;
+}
+
+#myheader .buttons li {
+	position: relative;
+
+/*원하는 만큼 길게 .33333을 길게 넣어줌*/
+	width: 33.3333333333333333333333%;
+	height: 65px;
+
+	float: left;
+}
+
+#myheader .buttons .menu-button {
+	/*inline 요소여도, absolute 이면, width/height 적용이 가능함*/
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	text-align: center;
+}
+
+#myheader .buttons li:nth-child(1) .menu-button {
+	background-color: red;
+}
+
+#myheader .buttons li:nth-child(2) .menu-button {
+	background-color: lightblue;
+}
+
+#myheader .buttons li:nth-child(3) .menu-button {
+	background-color: green;
+}
+
+/* 1em == 16px */
+@media only screen and (min-width: 47em) {
+	#myheader {
+		position: fixed;
+		width: 100%;
+		height: 80px;
+
+		top: 0;
+		left: 0;
+
+		z-index: 5;
+	}
+
+	#myheader h1 {
+		width: 50%;
+		background-color: yellow;
+	}
+
+	#myheader .logo {
+		width: 280px;
+		height: 80px;
+	}
+
+	#myheader .buttons {
+		position: absolute;
+
+		width: 50%;
+		height: 80px;
+
+		top: 0;
+		left: 50%;
+		/*height: ;*/
+	}
+
+	#myheader .buttons li{
+		height: 80px;
+	}
+}
+
+/*Main*/
+.main-content .product-group-link {
+	position: relative;
+	display: block;
+
+	width: 100%;
+	height: 0;
+	float: left;
+
+	padding-bottom: 56.25%;
+
+	overflow: hidden;
+}
+
+.product-group .product-group-link img {
+	width: 100.5%;
+	height: 100.5%;
+}
+
+.product-group-link.one {
+	background-color: #dbead8;
+}
+
+.product-group-link.two {
+	background-color: #c2d4d8;
+}
+
+.product-group-link.three {
+	background-color: #b0abc3;
+}
+
+.product-group .link-text {
+	position: absolute;
+
+	color: #fff;
+	font-size: 25px;
+	line-height: 1;
+	left: 25px;
+	bottom: 25px;
+}
+
+.message-link {
+	display: block;
+
+	font-size: 25px;
+	color: #585858;
+	text-align: center;
+	padding: 25px;
+}
+
+@media only screen and (min-width: 47em) {
+	.main-content {
+		padding-top: 80px;
+	}
+
+	.product-group .link-text {
+		left: 40px;
+		bottom: 40px;
+	}
+}
+
+@media only screen and (min-width: 60em) {
+	.main-content .product-group-link {
+		width: 50%;
+		padding-bottom: 28.125%;
+	}
+}
