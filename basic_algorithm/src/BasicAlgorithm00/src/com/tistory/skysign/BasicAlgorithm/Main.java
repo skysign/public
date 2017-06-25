@@ -1,5 +1,10 @@
 package com.tistory.skysign.BasicAlgorithm;
 
+import com.tistory.skysign.BasicAlgorithm.Sort.BubbleSort;
+import com.tistory.skysign.BasicAlgorithm.Sort.InsertionSort;
+import com.tistory.skysign.BasicAlgorithm.Sort.SelectionSort;
+import com.tistory.skysign.BasicAlgorithm.Sort.ShellSort;
+
 import java.util.Stack;
 
 public class Main {
@@ -158,7 +163,7 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        //run();
+        run();
 
         System.out.println("SelectionSort");
         SelectionSort.run();
@@ -166,5 +171,7 @@ public class Main {
         InsertionSort.run();
         System.out.println("BubbleSort");
         BubbleSort.run();
+        System.out.println("ShellSort");
+        ShellSort.run();
     }
 }
