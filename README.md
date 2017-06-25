@@ -12,3 +12,7 @@ skysign's public repository
 
 - Contribution
 	- 오픈소스프로젝트에 번역/커밋한 내용 저장
+
+- 알고리즘 문제 풀이 전략
+	- 책의 알고리즘을 자바로 구현한 소스
+	- http://www.hanbit.co.kr/store/books/look.php?p_code=B2769218958
