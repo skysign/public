@@ -158,9 +158,13 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        run();
+        //run();
 
-        // TODO Auto-generated method stub
-        //System.out.println("Hello goorm!");
+        System.out.println("SelectionSort");
+        SelectionSort.run();
+        System.out.println("InsertionSort");
+        InsertionSort.run();
+        System.out.println("BubbleSort");
+        BubbleSort.run();
     }
 }
