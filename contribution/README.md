@@ -1,15 +1,14 @@
-# Contribution / ±â¿©
+# Contribution / ê¸°ì—¬
 
-Á¶±Ý ¾¿ ÀÌ¶óµµ, ¼¼»óÀ» ÁÁ°Ô ¸¸µå´Â ÀÏ¿¡, ÀÛ°Ô ³ª¸¶ ±â¿©¸¦ ÇØº¸·Á°í ÇÕ´Ï´Ù.
-
+ì¡°ê¸ˆ ì”© ì´ë¼ë„, ì„¸ìƒì„ ì¢‹ê²Œ ë§Œë“œëŠ” ì¼ì—, ìž‘ê²Œ ë‚˜ë§ˆ ê¸°ì—¬ë¥¼ í•´ë³´ë ¤ê³  í•©ë‹ˆë‹¤.
 
 - gPodder
--- ÆÌÄ³½ºÆ® ´Ù¿î·ÎµåÇØ¼­ µè´Â ÇÁ·Î±×·¥ÀÔ´Ï´Ù
--- ÇÑ±¹¾î ¹ø¿ªÀ» ÁøÇàÇß°í, Ä¿¹ÔÀº ¾Æ·¡¿Í °°½À´Ï´Ù
+-- íŒŸìºìŠ¤íŠ¸ ë‹¤ìš´ë¡œë“œí•´ì„œ ë“£ëŠ” í”„ë¡œê·¸ëž¨ìž…ë‹ˆë‹¤
+-- í•œêµ­ì–´ ë²ˆì—­ì„ ì§„í–‰í–ˆê³ , ì»¤ë°‹ì€ ì•„ëž˜ì™€ ê°™ìŠµë‹ˆë‹¤
 -- https://github.com/gpodder/gpodder/blob/42f34d823036309853dc897e624e7f12c1daeeba/po/ko_KR.po
--- 2016³â 1¿ù 3ÀÏ ¿Ï·á
+-- 2016ë…„ 1ì›” 3ì¼ ì™„ë£Œ
 
-- »ýÈ°ÄÚµù
--- °­ÀÇ ÁßÀÇ ÇÏ³ª¸¦, Ã»°¢ Àå¾ÖÀÎ ºÐµéÀ» À§ÇØ¼­ ÇÑ±¹¾î ÀÚ¸· ÀÛ¾÷
+- ìƒí™œì½”ë”©
+-- ê°•ì˜ ì¤‘ì˜ í•˜ë‚˜ë¥¼, ì²­ê° ìž¥ì• ì¸ ë¶„ë“¤ì„ ìœ„í•´ì„œ í•œêµ­ì–´ ìžë§‰ ìž‘ì—…
 -- Linux - internet 2 https://www.youtube.com/watch?v=SZjlQbQJOWY&t=14s
--- 2017³â 3¿ù 12ÀÏ ¿Ï·á
+-- 2017ë…„ 3ì›” 12ì¼ ì™„ë£Œ
