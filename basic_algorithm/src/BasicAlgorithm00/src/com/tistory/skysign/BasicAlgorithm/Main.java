@@ -1,5 +1,6 @@
 package com.tistory.skysign.BasicAlgorithm;
 
+import com.sun.xml.internal.bind.v2.model.annotation.Quick;
 import com.tistory.skysign.BasicAlgorithm.Sort.BubbleSort;
 import com.tistory.skysign.BasicAlgorithm.Sort.InsertionSort;
 import com.tistory.skysign.BasicAlgorithm.Sort.SelectionSort;
@@ -155,6 +156,44 @@ public class Main {
         postorder_stack(A);
         System.out.println("");
     }
+
+    void swap(int d[], int i, int j) {
+
+    }
+
+    void QuickSort(int d[], int iLeft, int iRight) {
+        assert(iLeft < iRight);
+
+        int i, j, pivot;
+
+        i = iLeft;
+        pivot = d[iRight];
+        j = iRight-1;
+
+        while (true) {
+            while(d[i] < pivot) {
+                ++i;
+            }
+
+            while(pivot < d[j]) {
+                j--;
+            }
+
+            if (i>=j) {
+                break;
+            }
+
+            swap(d, i, j);
+        }
+
+        int tmp = d[i];
+        d[i] = pivot;
+        d[iRight] = tmp;
+
+        QuickSort(d, iLeft, i-1);
+        QuickSort(d, i+1, iRight);
+    }
+
 
     static void visit(Node node) {
         System.out.print(node.v);
