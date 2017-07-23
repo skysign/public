@@ -20,6 +20,7 @@ public class SelectionSort extends SortBase{
     }
 
     static public void run() {
+        System.out.println("SelectionSort");
         makeRandomNumber();
         System.out.println("Input");
         DisplayBuffer();
