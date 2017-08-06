@@ -1,12 +1,9 @@
 package com.tistory.skysign.BasicAlgorithm;
 
-import com.tistory.skysign.BasicAlgorithm.BinaryTree.BinaryTreeNode;
 import com.tistory.skysign.BasicAlgorithm.BinaryTree.InOrder;
 import com.tistory.skysign.BasicAlgorithm.BinaryTree.PostOrder;
 import com.tistory.skysign.BasicAlgorithm.BinaryTree.PreOrder;
 import com.tistory.skysign.BasicAlgorithm.Sort.*;
-
-import java.util.Stack;
 
 public class Main {
    /**
@@ -29,5 +26,9 @@ public class Main {
         QuickSort.run();
         System.out.println("RadixSort");
         RadixSort.run();
+        System.out.println("MergeSort");
+        MergeSort.run();
+        System.out.println("MergeSort2");
+        MergeSort2.run();
     }
 }
