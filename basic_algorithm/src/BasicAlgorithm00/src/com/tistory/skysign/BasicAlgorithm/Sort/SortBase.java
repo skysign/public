@@ -15,6 +15,12 @@ public class SortBase {
         mBuf[idxb] = nTmp;
     }
 
+    public static void swap(int data[], int idxa, int idxb) {
+        int nTmp = data[idxa];
+        data[idxa] = data[idxb];
+        data[idxb] = nTmp;
+    }
+
     public static void makeRandomNumber() {
         Random random = new Random();
         int i = 0;
