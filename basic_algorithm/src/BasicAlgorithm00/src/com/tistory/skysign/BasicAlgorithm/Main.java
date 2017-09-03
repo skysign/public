@@ -38,6 +38,8 @@ public class Main {
 //        Section03.run10_4();
 //        Section03.run10_6();
 //        Section03.run10_7();
-        Section03.run10_8();
+//        Section03.run10_8();
+//        Section03.run10_9();
+        Section03.run10_10();
     }
 }

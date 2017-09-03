@@ -89,17 +89,74 @@ public class Section03 {
 
         for (i = 2; i <= 1000; ++i) {
             for (j = 2; j < i; ++j) {
-                if(i % j == 0) {
-                   break;
+                if (i % j == 0) {
+                    break;
                 }
             }
 
-            if (i == j){
+            if (i == j) {
                 System.out.println(i);
                 cnt++;
             }
         }
 
+        System.out.print("numbers : ");
         System.out.println(cnt);
+    }
+
+    public static void run10_9() {
+        for (int i = 1; i <= 5; ++i) {
+            int num = i * 5;
+
+            for (int j = 1; j <= 5; ++j) {
+                if (i % 2 == 0) {
+                    System.out.print(num - j +1);
+                } else {
+                    System.out.print(num + j -5);
+                }
+                System.out.print('\t');
+            }
+
+            System.out.println();
+        }
+    }
+
+    public static int findCommonDiviser(int data1, int data2) {
+        int min = Math.min(data1, data2);
+
+        for (int i=2; i<=min; ++i) {
+            if ((data1 % i == 0) && (data2 % i == 0)) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    public static void run10_10() {
+        Scanner scanner = new Scanner(System.in);
+        int data1, data2, min;
+        int gcd = 1;
+        int commonDiviser = 0;
+
+        System.out.print("type number 1: ");
+        data1 = scanner.nextInt();
+        System.out.print("type number 2: ");
+        data2 = scanner.nextInt();
+
+        min = Math.min(data1, data2);
+
+        do {
+            commonDiviser = findCommonDiviser(data1, data2);
+            System.out.println("common diviser : " + commonDiviser);
+            if (commonDiviser > 0) {
+                gcd *= commonDiviser;
+                System.out.println("current GCD " + gcd);
+                data1 /= commonDiviser;
+                data2 /= commonDiviser;
+            }
+        } while (commonDiviser > 0);
+
+        System.out.println("GCD is " + gcd);
     }
 }
