@@ -30,7 +30,9 @@ public class Main {
 //        MergeSort.run();
 //        System.out.println("MergeSort2");
 //        MergeSort2.run();
-        System.out.println("HeapSort");
-        HeapSort.run();
+//        System.out.println("HeapSort");
+//        HeapSort.run();
+        System.out.println("BinarySearch");
+        BinarySearch.run();
     }
 }
