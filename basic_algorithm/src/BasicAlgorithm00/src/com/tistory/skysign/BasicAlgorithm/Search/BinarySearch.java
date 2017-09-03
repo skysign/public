@@ -1,6 +1,8 @@
-package com.tistory.skysign.BasicAlgorithm.Sort;
+package com.tistory.skysign.BasicAlgorithm.Search;
 
-public class BinarySearch extends QuickSort  {
+import com.tistory.skysign.BasicAlgorithm.Sort.QuickSort;
+
+public class BinarySearch extends QuickSort {
     static int CompareCount = 0;
 
     static int BinarySearch(int num) {

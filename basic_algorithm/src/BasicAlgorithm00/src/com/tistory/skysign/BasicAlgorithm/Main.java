@@ -1,9 +1,7 @@
 package com.tistory.skysign.BasicAlgorithm;
 
-import com.tistory.skysign.BasicAlgorithm.BinaryTree.InOrder;
-import com.tistory.skysign.BasicAlgorithm.BinaryTree.PostOrder;
-import com.tistory.skysign.BasicAlgorithm.BinaryTree.PreOrder;
-import com.tistory.skysign.BasicAlgorithm.Sort.*;
+import com.tistory.skysign.BasicAlgorithm.Chapter10.Section03;
+import com.tistory.skysign.BasicAlgorithm.Search.BinarySearch;
 
 public class Main {
    /**
@@ -32,7 +30,14 @@ public class Main {
 //        MergeSort2.run();
 //        System.out.println("HeapSort");
 //        HeapSort.run();
-        System.out.println("BinarySearch");
-        BinarySearch.run();
+//        System.out.println("BinarySearch");
+//        BinarySearch.run();
+//        System.out.println("Chapter10");
+//        System.out.println("Section03");
+//        Section03.run10_3();
+//        Section03.run10_4();
+//        Section03.run10_6();
+//        Section03.run10_7();
+        Section03.run10_8();
     }
 }
