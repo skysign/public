@@ -1,0 +1,19 @@
+{
+  "name": "image-slider",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "vue.js": "^0.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "vue.js",
+    "image-slider"
+  ],
+  "author": "ByeongKeon Kim",
+  "license": "ISC"
+}

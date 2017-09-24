@@ -1,0 +1,82 @@
+<!-- This is image slider example from vue.js -->
+<!-- Please refer that original version is here https://jsfiddle.net/0f7w6f4j/4/ -->
+<!-- This is just to make it as boilerplate. -->
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Welcome to Vue.js image slider example</title>
+	<meta charset="UTF-8">
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<style>
+		.fade-transition {
+			transition: all 0.8s ease;
+			overflow: hidden;
+			visibility: visible;
+			opacity: 1;
+			position: absolute;
+		}
+		.fade-enter, .fade-leave {
+			opacity: 0;
+			visibility: hidden;
+		}
+	</style>
+
+	</head>
+	<body>
+
+	<image-slider>
+    <p>
+      <a @click="prev">Previous</a> || <a @click="next">Next</a>
+    </p>
+    
+    <div
+       v-for="number in [currentNumber]"
+       transition="fade"
+       >
+    <img
+        :src="images[Math.abs(currentNumber) % images.length]"
+        v-on:mouseover="stopRotation"
+        v-on:mouseout="startRotation"
+        />
+	</div>
+	</image-slider>
+	
+	<script>
+	new Vue({
+		name: 'image-slider',
+		el: 'image-slider',
+		data: {
+			images: [	'http://i.imgur.com/vYdoAKu.jpg',
+						'http://i.imgur.com/PUD9HQL.jpg',
+						'http://i.imgur.com/Lfv18Sb.jpg',
+						'http://i.imgur.com/tmVJtna.jpg',
+						'http://i.imgur.com/ZfFAkWZ.jpg'],
+			currentNumber: 0,
+			timer: null
+		},
+
+		ready: function () {
+			this.startRotation();
+		},
+
+		methods: {
+			startRotation: function() {
+				this.timer = setInterval(this.next, 3000);
+			},
+
+			stopRotation: function() {
+				clearTimeout(this.timer);
+				this.timer = null;
+			},
+
+			next: function() {
+				this.currentNumber += 1
+			},
+			prev: function() {
+				this.currentNumber -= 1
+			}
+		}
+	});
+	</script>
+</body>
+</html>
