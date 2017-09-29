@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Application Executer on Internet Explorer browser</title>
+    <script type="text/javascript" language="javascript">
+        function RunNotepad() {
+            WshShell = new ActiveXObject("WScript.Shell");
+            WshShell.Run("c:/windows/system32/notepad.exe", 1, false);
+        }
+
+        function RunLocalExecutable() {
+            WshShell = new ActiveXObject("WScript.Shell");
+
+            WshShell.Run("explorer C:\\Program Files" , 1, true);
+        }
+
+        function RunLocalExecutableWithEnviromentVariable() {
+            WshShell = new ActiveXObject("WScript.Shell");
+
+            WshShell.Run("explorer %USERPROFILE%" , 1, true);
+        }
+    </script>
+</head>
+<body>
+<h1>Use only Internet explorer</h1>
+<br />
+<input type="button" value="RunNotepad" onclick="RunNotepad();"/>
+<br />
+<br />
+<input type="button" value="RunLocalExecutable" onclick="RunLocalExecutable();"/>
+<br />
+<br />
+<input type="button" value="RunLocalExecutable with Environment variable" onclick="RunLocalExecutableWithEnviromentVariable();"/>
+</body>
+</html>
