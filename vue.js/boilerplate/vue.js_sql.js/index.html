@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Vue.js/sql.js example</title>
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/sql.js@0.4.0/js/sql-debug.js"></script>
+</head>
+<body>
+  <h1>Choose SQLite files in browser</h1>
+
+  <vuejssqljs>
+    Load an SQLite database file: <input type="file" id="dbfile" v-on:change="myOnChange" >
+    <div id="res">rows from local file : {{rows}}</div>
+    <div id="res2">rows from server : {{rows_from_server}}</div>
+  </vuejssqljs>
+
+  <script>
+    var myVue = new Vue ({
+      name: 'vuejssqljs',
+      el: 'vuejssqljs',
+      data: {
+        fileReader: null,
+        rows: "N/A",
+        rows_from_server: "N/A"
+      },
+
+      mounted: function () {
+        console.log("begin mounted");
+
+        var path = "https://unpkg.com/vue.js_sql.js@0.0.1/vuejssqljs.sqlite3.db";
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", path, true);
+        xhr.responseType = "arraybuffer";
+
+        xhr.onload = function() {
+          var data = new Uint8Array(xhr.response);
+          var arr = new Array();
+          for(var i = 0; i != data.length; ++i)
+            arr[i] = String.fromCharCode(data[i]);
+
+            var dbfile = arr.join("");
+
+            var db = new SQL.Database(data);
+		        var res = db.exec("SELECT * FROM vuejssqljs");
+		        myVue.$data.rows_from_server = JSON.stringify(res);
+          };
+        xhr.send();
+        console.log("end mounted");
+      },
+
+      methods: {
+  			myOnChange: function () {
+  				var dbFileElm = document.getElementById('dbfile');
+  				var f = dbFileElm.files[0];
+  				var r = new FileReader();
+  				r.onload = function() {
+  					console.log("done");
+
+            var db = new SQL.Database(new Uint8Array(r.result));
+
+            res = db.exec("SELECT * FROM vuejssqljs");
+            console.log(res);
+            myVue.$data.rows = JSON.stringify(res);
+
+            db.close();
+  				}
+  				r.readAsArrayBuffer(f);
+  			}
+    }
+  });
+</script>
+</body>
+</html>

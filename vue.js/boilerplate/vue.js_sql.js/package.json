@@ -1,0 +1,21 @@
+{
+  "name": "vue.js_sql.js",
+  "version": "0.0.2",
+  "description": "It is an example to use both vue.js and sql.js at the same time",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skysign/public/tree/master/vue.js/boilerplate/vue.js_sql.js"
+  },
+  "keywords": [
+    "vue.js",
+    "sql.js",
+    "example",
+    "boilerplate"
+  ],
+  "author": "ByeongKeon Kim",
+  "license": "ISC"
+}
