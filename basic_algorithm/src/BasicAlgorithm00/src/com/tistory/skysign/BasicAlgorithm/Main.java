@@ -1,6 +1,6 @@
 package com.tistory.skysign.BasicAlgorithm;
 
-import com.tistory.skysign.BasicAlgorithm.Chapter11.Chapter11Section01;
+import com.tistory.skysign.BasicAlgorithm.Chapter11.Section01;
 
 public class Main {
    /**
@@ -40,6 +40,6 @@ public class Main {
 //        Section03.run10_8();
 //        Section03.run10_9();
 //        Section03.run10_10();
-        Chapter11Section01.run11_01();
+        Section01.run11_01();
     }
 }
