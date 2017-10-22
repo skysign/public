@@ -1,11 +1,11 @@
 # Introduction
-This is an example how we use babel + webpack + vuejs + sqljs as a boilerplate 
+    This is an example how we use babel + webpack + vuejs + sqljs as a boilerplate 
 
 # Included features
-##how to use Class style vue.js
-##how to use bable
-##how to use webpack with *.vue file
-##sql.js usage example is integrated, also.
+    how to use Class style vue.js
+    how to use bable
+    how to use webpack with *.vue file
+    sql.js usage example is integrated, also.
 
 ## Used module list
     babel-core
@@ -24,4 +24,4 @@ This is an example how we use babel + webpack + vuejs + sqljs as a boilerplate
     webpack-dev-server
 
 # Github link
-https://github.com/skysign/public/tree/master/vue.js/boilerplate/babel-webpack-vuejs-sqljs-boilerplate
+    https://github.com/skysign/public/tree/master/vue.js/boilerplate/babel-webpack-vuejs-sqljs-boilerplate
