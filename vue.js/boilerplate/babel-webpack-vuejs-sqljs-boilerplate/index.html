@@ -1,0 +1,24 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NPM Webpack</title>
+	<meta charset="UTF-8">
+	<!--sql.sj should be loaded like this way, please don't use require()/import to load sql.js, they don't work-->
+	<script src="https://unpkg.com/sql.js@0.4.0/js/sql.js"></script>
+</head>
+<body>
+	<script>
+        console.log("begin body of html");
+    </script>
+    babel + webpack + vuejs + sqljs boilerplate
+
+	<div id="app">
+	</div>
+	
+    <script type="text/javascript" src="http://localhost:8080/dist/bundle.js"></script>
+	<script>
+        console.log("end body of html");
+    </script>
+</body>
+</html>
