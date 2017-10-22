@@ -1,0 +1,8 @@
+npm init -y
+
+npm install --save-dev babel-loader babel-core babel-preset-env webpack webpack-dev-server vue
+
+
+
+
+
