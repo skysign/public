@@ -1,4 +1,4 @@
-Public repository of ByeonKeon Kim(skysign@gmail.com)
+Public repository of 김병건/ByeonKeon Kim(skysign@gmail.com)
 
 # RxJava
     리액티브 프로그래밍을 안드로이드에서 학습한 예제
