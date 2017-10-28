@@ -1,0 +1,18 @@
+{
+  "name": "app-executer",
+  "version": "0.0.1",
+  "description": "Application Executer on Internet Explorer browser",
+  "main": "Application Executer on Internet Explorer browser.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skysign/public/tree/master/vue.js/boilerplate/app-executer"
+  },
+  "keywords": [
+    "app-executer"
+  ],
+  "author": "ByeongKeon Kim",
+  "license": "ISC"
+}

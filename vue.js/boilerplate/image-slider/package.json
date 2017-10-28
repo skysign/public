@@ -1,15 +1,16 @@
 {
   "name": "image-slider",
   "version": "0.0.1",
-  "description": "",
+  "description": "This is image slider example from vue.js. Please refer that original version is here https://jsfiddle.net/0f7w6f4j/4/ This is just to make it as boilerplate. ",
   "main": "index.html",
   "dependencies": {
     "vue.js": "^0.3.2"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "mocha"
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/skysign/public/tree/master/vue.js/boilerplate/image-slider"
   },
+  "devDependencies": {},
   "keywords": [
     "vue.js",
     "image-slider"

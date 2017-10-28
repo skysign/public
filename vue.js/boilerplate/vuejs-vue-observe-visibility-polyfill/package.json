@@ -1,6 +1,6 @@
 {
-  "name": "babel-webpack-vuejs-sqljs-boilderplate",
-  "version": "1.0.1",
+  "name": "vuejs-vue-observe-visibility-polyfill",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,23 +8,41 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue-observe-visibility",
+    "polyfill"
+  ],
+  "watch": {
+    "build": "*.html"
+  },
   "author": "ByeongKeon Kim",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skysign/public.git"
+  },
   "dependencies": {
     "vue": "^2.4.4",
     "vue-property-decorator": "^6.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
+    "babel-plugin-transform-es3-property-literals": "^6.22.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "vue": "^2.5.2",
     "vue-class-component": "^6.0.0",
     "vue-loader": "^13.0.5",
+    "vue-observe-visibility": "^0.3.1",
     "vue-property-decorator": "^6.0.0",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.8.1",
