@@ -64,18 +64,9 @@ export default class MyVue extends Vue {
     number = 0;
     msg = "msg default";
 
-    MyVue () {
-        console.log("MyVue consturctor, it doesn't work");
-    }
-
     mounted() {
         console.log("begin mounted MyVue");
         console.log("end mounted MyVue");
-    }
-
-    get computedMsg () {
-        console.log("get computedMsg");
-        return 'computed ' + this.msg
     }
 
     visibilityChanged (isVisible, entry) {
