@@ -1,6 +1,8 @@
 package com.tistory.skysign.BasicAlgorithm;
 
 import com.tistory.skysign.BasicAlgorithm.Chapter11.Section01;
+import com.tistory.skysign.BasicAlgorithm.Chapter11.Section03;
+import com.tistory.skysign.BasicAlgorithm.Extra.ChineseRemainderTheorem.Solve;
 
 public class Main {
    /**
@@ -40,6 +42,8 @@ public class Main {
 //        Section03.run10_8();
 //        Section03.run10_9();
 //        Section03.run10_10();
-        Section01.run11_01();
+//        Section01.run11_01();
+//        ChineseRemainderTheorem.run();
+        Section03.run11_03();
     }
 }
