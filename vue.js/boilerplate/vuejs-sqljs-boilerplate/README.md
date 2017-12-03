@@ -6,7 +6,7 @@ Example sqlite db file is in src/assets/mytest.db
 
 This will load mytest.db into vue.js and rows in sqlite database, are displayed in helloworld component.
 
-Not only this example shows also show how we use Vuex store to load db file from server,
+Not only this example shows how we use Vuex store to load db file from server,
 But also, we can see how vue component and Vuex store interact each other.
 
 ## Build Setup
