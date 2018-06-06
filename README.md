@@ -1,5 +1,12 @@
 Public repository of 김병건/ByeonKeon Kim(skysign@gmail.com)
 
+# Deep Learning from Scratch
+    밑바닥부터 시작하는 딥러닝
+    http://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198
+    ゼロから作るDeep Learning――Pythonで学ぶディープラーニングの理論と実装
+    https://www.oreilly.co.jp/books/9784873117584/
+    학습후 책 내용 구현해본 소스
+
 # RxJava
     리액티브 프로그래밍을 안드로이드에서 학습한 예제
 
