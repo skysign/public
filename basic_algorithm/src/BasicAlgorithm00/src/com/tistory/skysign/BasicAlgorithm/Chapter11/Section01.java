@@ -7,9 +7,6 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-/*
-그리드 알고리즘을 기반으로한, 다이다믹 프로그래밍으로 풀어야 하는 문제입니다.
- */
 public class Section01 {
     public static void run11_01() {
         String strInputFile;
@@ -72,7 +69,6 @@ public class Section01 {
         }
 
         rtnnMinRunningMS = S[S.length-1];
-
 
         return rtnnMinRunningMS;
     }

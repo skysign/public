@@ -1,6 +1,6 @@
 package com.tistory.skysign.BasicAlgorithm.Extra.ChineseRemainderTheorem;
 
-public class ChineseRemainderTheorem {
+public class Solve {
     static public void run() {
         for (long l = 1; l < Long.MAX_VALUE; ++l) {
             long digits = (long)(Math.log10(l)+1);
