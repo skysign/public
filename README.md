@@ -11,7 +11,7 @@
  -	Embedded S/W Development / device drive development
 
 # Professional Experience
-## NVIDIA Korea / 2011 ~ Present
+## NVIDIA Korea / 2011 ~ 2019
  - QNX Software Engineer
   - ISO-26262, ASIL
  - Android Automotive Software Engineer
